@@ -1,6 +1,7 @@
 package dominio.test;
 
 import dominio.*;
+import dominio.Core.Cargar_Zapatos;
 import dominio.Core.Proveedor;
 import dominio.Core.Zapato;
 import dominio.Enums.Color;
@@ -44,9 +45,11 @@ class TestGestorDeZapatos {
 	Proveedor p1 =  new Proveedor(12,"Marca",Pais.ARGENTINA,"+389 578915");
 	gz.limpiar();
 	
-	gz.addZapato("casual", 43, 170.50, Color.BLANCO, p1,10,40);
-	gz.addZapato("rangler", 28, 180, Color.NEGRO, p1,2,100);
-	gz.addZapato("pandero", 28, 180, Color.NEGRO, p1,2,100);
+	Cargar_Zapatos CZ = new Cargar_Zapatos(gz);
+
+	CZ.addZapato("casual", 43, 170.50, Color.BLANCO, p1,10,40);
+	CZ.addZapato("rangler", 28, 180, Color.NEGRO, p1,2,100);
+	CZ.addZapato("pandero", 28, 180, Color.NEGRO, p1,2,100);
 	
 	ArrayList<Zapato> aux = gz.getZapatos();
 	

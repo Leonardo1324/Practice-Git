@@ -7,7 +7,7 @@ public class Cargar_Zapatos{
 
     private GestorZapatos miGestorZapatos;
 
-    private Cargar_Zapatos(GestorZapatos gz){
+    public Cargar_Zapatos(GestorZapatos gz){
         this.miGestorZapatos = gz;
     }
 
