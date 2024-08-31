@@ -30,6 +30,10 @@ public class GestorZapatos {
 		public void limpiar() {
 			misZapatos = new ArrayList<Zapato>();
 		}
+
+		private boolean hayDuplicado(String codigo) {
+			return misZapatos.stream().anyMatch(p -> p.getCodigo().compareToIgnoreCase(codigo)==0);
+		}
 		
 		public boolean addZapato(String modelo, int talle, double precio, Color miColor,Proveedor proveedor,int reserva , int stock) {
 			
@@ -46,47 +50,14 @@ public class GestorZapatos {
 			return false;
 		}
 		
-		// ver si lo puedo pasar a un calendar la fecha
+		// Cambia el precio de un Zapato en particular y agrega la fecha del cambio
 		public boolean cambiarPrecio(String codigo, double neuvo,int dia,int mes,int anio) {
-			//buscar con Streams.
-			
-			
-//			ArrayList<Zapato> aux = misZapatos;
-//			ArrayList<Zapato> aux2=aux
-//							.stream()
-//							.filter(p->p.getCodigo().compareTo(codigo)== 0)
-//							.collect(Collectors.toCollection(ArrayList<Zapato>::new));
-//					
-//			for (Zapato zapato : aux2) {
-//				System.out.println(zapato.toString());
-//			}
-//			
-//			if (aux2.size()==1) {
-//				aux2.get(aux2.size()-1).setPrecio(neuvo, dia, mes, anio);
-//				return true;
-//			}
-//			else {
-//				System.out.println("llego mas de un zapato");
-//				return false;
-//			}
-			
 			Zapato aux;
 			aux = misZapatos.stream().filter(p -> p.getCodigo().compareTo(codigo)==0).collect(Collectors.toList()).get(0);
 			aux.setPrecio(neuvo, dia, mes, anio);
 			return true;
 		}
-		/**
-		 * cambiar for por streams.
-		 * @param codigo
-		 * @return
-		 */
-		
-		private boolean hayDuplicado(String codigo) {
-		
-			return misZapatos.stream().anyMatch(p -> p.getCodigo().compareToIgnoreCase(codigo)==0);
-			
-		}
-		
+
 		
 		// *****************************************************
 		public boolean removeZapato(String codigo) {
