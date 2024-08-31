@@ -2,6 +2,7 @@ package dominio.test;
 
 import dominio.*;
 import dominio.Core.Cargar_Zapatos;
+import dominio.Core.Obtener_Zapatos_talle;
 import dominio.Core.Proveedor;
 import dominio.Core.Zapato;
 import dominio.Enums.Color;
@@ -67,22 +68,25 @@ class TestGestorDeZapatos {
 	GestorZapatos gz= GestorZapatos.getInstancia();
 	Proveedor p1 =  new Proveedor(12,"Marca",Pais.ARGENTINA,"+389 578915");
 	gz.limpiar();
+
+	Cargar_Zapatos CZ = new Cargar_Zapatos(gz);
+
+	Obtener_Zapatos_talle OZT = new Obtener_Zapatos_talle(gz);
 	
-	gz.addZapato("casual", 43, 170.50, Color.BLANCO, p1,10,40);
-	gz.addZapato("rangler", 40, 170.50, Color.BLANCO, p1,10,40);
-	gz.addZapato("pico", 38, 170.50, Color.BLANCO, p1,10,40);
-	gz.addZapato("pandero", 41, 170.50, Color.BLANCO, p1,10,40);
-	gz.addZapato("prada", 43, 170.50, Color.BLANCO, p1,10,40);
-	gz.addZapato("belico", 43, 170.50, Color.BLANCO, p1,10,40);
-	
-	System.out.println("**************talle E -> modelo EE -> codigo******************");
-	ArrayList<Zapato> aux = gz.getZapatos(Color.BLANCO);
-	
-//	for (Zapato zapato : aux) {
+	CZ.addZapato("casual", 43, 170.50, Color.BLANCO, p1,10,40);
+	CZ.addZapato("rangler", 40, 170.50, Color.BLANCO, p1,10,40);
+	CZ.addZapato("pico", 38, 170.50, Color.BLANCO, p1,10,40);
+	CZ.addZapato("pandero", 41, 170.50, Color.BLANCO, p1,10,40);
+	CZ.addZapato("prada", 43, 170.50, Color.BLANCO, p1,10,40);
+	CZ.addZapato("belico", 43, 170.50, Color.BLANCO, p1,10,40);
+
+
+	ArrayList<Zapato> aux = OZT.getZapatos(Color.BLANCO);
 	
 	assertEquals(6,aux.size());
 	
 	}
+	
 	@Test
 	@Order(3)
 	@DisplayName("03 getPrecio fecha en particular ")

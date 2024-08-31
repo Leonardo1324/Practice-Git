@@ -11,7 +11,7 @@ public class Obtener_Zapatos_talle {
 
     private GestorZapatos miGestorZapatos;
 
-    private Obtener_Zapatos_talle(GestorZapatos gz){
+    public Obtener_Zapatos_talle(GestorZapatos gz){
         this.miGestorZapatos = gz;
     }
     // talle por empate modelo
