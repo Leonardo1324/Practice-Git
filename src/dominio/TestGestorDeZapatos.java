@@ -68,11 +68,6 @@ class TestGestorDeZapatos {
 	ArrayList<Zapato> aux = gz.getZapatos(Color.BLANCO);
 	
 //	for (Zapato zapato : aux) {
-//		System.out.println(zapato.toString());
-//	}
-
-	// marca
-	// pais
 	
 	assertEquals(6,aux.size());
 	

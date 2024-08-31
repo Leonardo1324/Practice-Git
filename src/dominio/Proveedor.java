@@ -68,7 +68,4 @@ public class Proveedor {
 	}
 	
 }
-enum Pais{
-	ITALIA,ARGENTINA,MACEDONIA,URUGUAY;
-}
 

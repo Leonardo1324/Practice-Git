@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 
 import org.junit.experimental.theories.FromDataPoints;
 
-
 @SuppressWarnings("unused")
 public class GestorZapatos {
 
@@ -58,8 +57,7 @@ public class GestorZapatos {
 			return true;
 		}
 
-		
-		// *****************************************************
+		// *******************************************
 		public boolean removeZapato(String codigo) {
 			return misZapatos.removeIf(z -> z.getCodigo().compareTo(codigo)==0);
 		}
