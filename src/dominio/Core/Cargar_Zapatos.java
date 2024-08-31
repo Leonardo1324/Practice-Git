@@ -1,4 +1,7 @@
-package dominio;
+package dominio.Core;
+
+import dominio.GestorZapatos;
+import dominio.Enums.Color;
 
 public class Cargar_Zapatos{
 

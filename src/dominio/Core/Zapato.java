@@ -1,4 +1,4 @@
-package dominio;
+package dominio.Core;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -7,6 +7,8 @@ import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
+
+import dominio.Enums.Color;
 
 @SuppressWarnings("unused")
 public class Zapato {

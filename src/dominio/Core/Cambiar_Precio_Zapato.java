@@ -1,6 +1,8 @@
-package dominio;
+package dominio.Core;
 
 import java.util.stream.Collectors;
+
+import dominio.GestorZapatos;
 
 public class Cambiar_Precio_Zapato {
 

@@ -1,4 +1,6 @@
-package dominio;
+package dominio.Core;
+
+import dominio.Enums.Pais;
 
 public class Proveedor {
 	int codigoAsociado; 

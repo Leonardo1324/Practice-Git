@@ -1,8 +1,10 @@
-package dominio;
+package dominio.Core;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
+import dominio.GestorZapatos;
 
 public class Obtner_preio_fechaExacta {
 

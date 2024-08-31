@@ -1,4 +1,6 @@
-package dominio;
+package dominio.Core;
+
+import dominio.GestorZapatos;
 
 public class Modificar_Stock {
 

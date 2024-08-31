@@ -1,14 +1,11 @@
 package dominio.test;
 
 import dominio.*;
+import dominio.Core.Proveedor;
+import dominio.Core.Zapato;
+import dominio.Enums.Color;
+import dominio.Enums.Pais;
 import dominio.Exceptions.*;
-
-import dominio.Color;
-import dominio.GestorZapatos;
-import dominio.Pais;
-import dominio.Proveedor;
-import dominio.Zapato;
-
 
 import static org.junit.jupiter.api.Assertions.*;
 

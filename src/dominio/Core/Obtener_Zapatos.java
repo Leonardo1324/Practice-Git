@@ -1,6 +1,8 @@
-package dominio;
+package dominio.Core;
 
 import java.util.ArrayList;
+
+import dominio.GestorZapatos;
 
 public class Obtener_Zapatos {
     

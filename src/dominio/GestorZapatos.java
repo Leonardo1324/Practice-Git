@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 
 import org.junit.experimental.theories.FromDataPoints;
 
+import dominio.Core.Zapato;
+
 @SuppressWarnings("unused")
 public class GestorZapatos {
 
