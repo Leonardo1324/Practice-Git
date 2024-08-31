@@ -24,24 +24,8 @@ public class Zapato {
 	private int stock;
 	private int stockMinimo;
 	
-	/**
-	 * Agregar campo int stock y campo int stokminimo
-	 * 
-	 * @param modelo
-	 * @param talle
-	 * @param precio este atributo cambi de tipo double a tipo List<Precio>
-	 * Agregar void setPrecio(double)
-	 * @param miColor
-	 * @param reservado
-	 * Agregar cantidad reservada (int)
-	 * @param proveedor
-	 * @param numero
-	 * agregar atribut stock y stock minimo
-	 */
-	
-	
 	public Zapato(String modelo, int talle, double precioCompra, Color miColor, Proveedor proveedor,
-			int reservado, int stock) {
+		int reservado, int stock) {
 		
 		this.modelo = modelo;
 		this.talle = talle;
