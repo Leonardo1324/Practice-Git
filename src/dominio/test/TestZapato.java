@@ -1,7 +1,11 @@
 package dominio.test;
 
+import dominio.Color;
+import dominio.Pais;
+import dominio.Proveedor;
+import dominio.Zapato;
+import dominio.Exceptions.*;
 import dominio.*;
-
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -69,7 +73,6 @@ class TestZapato {
 		z1.setPrecio(300.50, 15, 10, 2010);
 		
 		assertEquals(250.50,z1.getPrecio(15,10,2010));
-		
 		
 	}
 }

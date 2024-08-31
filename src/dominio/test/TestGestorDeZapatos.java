@@ -1,4 +1,14 @@
-package dominio;
+package dominio.test;
+
+import dominio.*;
+import dominio.Exceptions.*;
+
+import dominio.Color;
+import dominio.GestorZapatos;
+import dominio.Pais;
+import dominio.Proveedor;
+import dominio.Zapato;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,6 +22,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 //import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class TestGestorDeZapatos {
