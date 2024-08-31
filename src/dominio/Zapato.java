@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 
+@SuppressWarnings("unused")
 public class Zapato {
 	
 	private String modelo;
@@ -81,7 +82,7 @@ public class Zapato {
 		String salida="";
 		String iniciales;
 		StringTokenizer palabras = new StringTokenizer(Marca); // <- dada una cadena, obtiene las subcadenas separadas 
-																//por un separador pasado por parámetro. si no se especifica es un espacio
+																//por un separador pasado por parï¿½metro. si no se especifica es un espacio
 		while (palabras.hasMoreElements()) {
 			iniciales = palabras.nextToken();
 			salida += iniciales.substring(0, 1);

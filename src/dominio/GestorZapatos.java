@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import org.junit.experimental.theories.FromDataPoints;
 
 
-
+@SuppressWarnings("unused")
 public class GestorZapatos {
 
 		private static GestorZapatos gz;
