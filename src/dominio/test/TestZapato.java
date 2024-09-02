@@ -56,7 +56,7 @@ class TestZapato {
 	
 	@Test
 	@Order(3)
-	@DisplayName("get precio fechas")
+	@DisplayName("03  precio fechas")
 	void test03() {
 		Proveedor p1= 	new Proveedor(12, "Marca", Pais.ARGENTINA, "+54 3825 324578");
 		Zapato z1 = new Zapato("casual",43,150.50,Color.NEGRO,p1,5,20);

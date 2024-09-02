@@ -8,7 +8,7 @@ public class Cambiar_Precio_Zapato {
 
     private GestorZapatos miGestorZapatos;
 
-    private Cambiar_Precio_Zapato(GestorZapatos gz){
+    public Cambiar_Precio_Zapato(GestorZapatos gz){
         this.miGestorZapatos = gz;
     }
 

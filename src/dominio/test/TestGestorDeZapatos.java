@@ -1,10 +1,7 @@
 package dominio.test;
 
 import dominio.*;
-import dominio.Core.Cargar_Zapatos;
-import dominio.Core.Obtener_Zapatos_talle;
-import dominio.Core.Proveedor;
-import dominio.Core.Zapato;
+import dominio.Core.*;
 import dominio.Enums.Color;
 import dominio.Enums.Pais;
 import dominio.Exceptions.*;
@@ -88,32 +85,37 @@ class TestGestorDeZapatos {
 	}
 	
 	@Test
-	@Order(3)
-	@DisplayName("03 getPrecio fecha en particular ")
+	@Order(4)
+	@DisplayName("04 getPrecio fecha en particular ")
 	void test04() {
 		GestorZapatos gz= GestorZapatos.getInstancia();
 		Proveedor p1 =  new Proveedor(12,"Marca",Pais.ARGENTINA,"+389 578915");
 		GregorianCalendar f1=new GregorianCalendar();
 		f1.set(10, 8, 2010);
 		gz.limpiar();
-		
-		System.out.println(f1);
-		
-		gz.addZapato("casual", 43, 170.50, Color.BLANCO, p1,10,40);
-		
-		gz.cambiarPrecio("M-A-CA-43", 200.50, 15, 8, 2010);
-		gz.cambiarPrecio("M-A-CA-43", 250.50, 15, 9, 2010);
-		
-		ArrayList<Zapato> aux = gz.getZapatos(Color.BLANCO);
+
+
+		Cargar_Zapatos CZ = new Cargar_Zapatos(gz);
+		Cambiar_Precio_Zapato CP = new Cambiar_Precio_Zapato(gz);
+		Obtener_Zapatos_talle OZT = new Obtener_Zapatos_talle(gz);
+		Obtner_preio_fechaExacta OPF = new Obtner_preio_fechaExacta(gz);
+
+
+		System.out.println("es aca: "+f1);
+
+		CZ.addZapato("casual", 43, 170.50, Color.BLANCO, p1,10,40);
+
+		CP.cambiarPrecio("M-A-CA-43", 200.50, 15, 8, 2010);
+		CP.cambiarPrecio("M-A-CA-43", 250.50, 15, 9, 2010);
+
+		ArrayList<Zapato> aux = OZT.getZapatos(Color.BLANCO);
 		for (Zapato zapato : aux) {
 			System.out.println(zapato.toString());
 		}
-		
-		gz.getPrecioViejo("casual", f1);
-		
-		
-		
-		
+
+		System.out.println("esto es: "+OPF.getPrecioViejo("casual", f1));
+
+		assertEquals(250.50,OPF.getPrecioViejo("casual", f1));
 	}
 	
 }

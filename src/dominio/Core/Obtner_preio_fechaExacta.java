@@ -10,7 +10,7 @@ public class Obtner_preio_fechaExacta {
 
     private GestorZapatos miGestorZapatos;
 
-    private Obtner_preio_fechaExacta(GestorZapatos gz){
+    public Obtner_preio_fechaExacta(GestorZapatos gz){
         this.miGestorZapatos = gz;
     }
 
