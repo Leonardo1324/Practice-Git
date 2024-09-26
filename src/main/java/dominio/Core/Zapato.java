@@ -1,4 +1,4 @@
-package dominio;
+package main.java.dominio.Core;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -7,6 +7,8 @@ import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
+
+import main.java.dominio.Enums.*;
 
 @SuppressWarnings("unused")
 public class Zapato {
@@ -24,24 +26,8 @@ public class Zapato {
 	private int stock;
 	private int stockMinimo;
 	
-	/**
-	 * Agregar campo int stock y campo int stokminimo
-	 * 
-	 * @param modelo
-	 * @param talle
-	 * @param precio este atributo cambi de tipo double a tipo List<Precio>
-	 * Agregar void setPrecio(double)
-	 * @param miColor
-	 * @param reservado
-	 * Agregar cantidad reservada (int)
-	 * @param proveedor
-	 * @param numero
-	 * agregar atribut stock y stock minimo
-	 */
-	
-	
 	public Zapato(String modelo, int talle, double precioCompra, Color miColor, Proveedor proveedor,
-			int reservado, int stock) {
+		int reservado, int stock) {
 		
 		this.modelo = modelo;
 		this.talle = talle;
@@ -67,7 +53,7 @@ public class Zapato {
 		 * Agregar al codigo las dos primeras letras del modelo y el talle
 		 */
 	}
-	
+
 	private String generadorDeCodigo(Proveedor proveedor,String modelo,int talle) {
 		
 		String salida;

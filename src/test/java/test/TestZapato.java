@@ -1,14 +1,11 @@
-package dominio;
+package test.java.test;
 
+import main.java.dominio.Core.*;
+import main.java.dominio.Enums.*;
+
+import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
-
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-//import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class TestZapato {
@@ -48,7 +45,7 @@ class TestZapato {
 	
 	@Test
 	@Order(3)
-	@DisplayName("get precio fechas")
+	@DisplayName("03  precio fechas")
 	void test03() {
 		Proveedor p1= 	new Proveedor(12, "Marca", Pais.ARGENTINA, "+54 3825 324578");
 		Zapato z1 = new Zapato("casual",43,150.50,Color.NEGRO,p1,5,20);
@@ -65,7 +62,6 @@ class TestZapato {
 		z1.setPrecio(300.50, 15, 10, 2010);
 		
 		assertEquals(250.50,z1.getPrecio(15,10,2010));
-		
 		
 	}
 }

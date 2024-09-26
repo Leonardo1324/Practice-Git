@@ -1,4 +1,4 @@
-package dominio;
+package main.java.dominio.Core;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

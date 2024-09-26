@@ -1,4 +1,6 @@
-package dominio;
+package main.java.dominio.Core;
+
+import main.java.dominio.Enums.*;
 
 public class Proveedor {
 	int codigoAsociado; 
@@ -67,8 +69,5 @@ public class Proveedor {
 		return true;
 	}
 	
-}
-enum Pais{
-	ITALIA,ARGENTINA,MACEDONIA,URUGUAY;
 }
 

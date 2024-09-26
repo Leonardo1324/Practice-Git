@@ -1,4 +1,4 @@
-package dominio;
+package dominio.Exceptions;
 
 @SuppressWarnings("serial")
 public class ExceptionZapatoProvedorNull extends ExceptionZapato {
