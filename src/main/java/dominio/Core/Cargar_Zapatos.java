@@ -1,7 +1,8 @@
-package dominio.Core;
+package main.java.dominio.Core;
 
-import dominio.GestorZapatos;
-import dominio.Enums.Color;
+import main.java.dominio.GestorZapatos;
+import main.java.dominio.Enums.Color;
+
 
 public class Cargar_Zapatos{
 

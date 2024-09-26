@@ -1,6 +1,6 @@
-package dominio.Core;
+package main.java.dominio.Core;
 
-import dominio.GestorZapatos;
+import main.java.dominio.GestorZapatos;
 
 public class Modificar_Stock {
 

@@ -1,21 +1,10 @@
-package dominio.test;
+package test.java.test;
 
-import dominio.Exceptions.*;
-import dominio.*;
-import dominio.Core.Proveedor;
-import dominio.Core.Zapato;
-import dominio.Enums.Color;
-import dominio.Enums.Pais;
+import main.java.dominio.Core.*;
+import main.java.dominio.Enums.*;
 
+import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-//import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)

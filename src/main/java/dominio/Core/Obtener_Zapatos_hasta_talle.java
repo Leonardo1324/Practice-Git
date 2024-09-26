@@ -1,16 +1,16 @@
-package dominio.Core;
+package main.java.dominio.Core;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
-import dominio.GestorZapatos;
+import main.java.dominio.GestorZapatos;
 
-public class Obtener_Zapatos_RangoPrecios {
+public class Obtener_Zapatos_hasta_talle {
 
     private GestorZapatos miGestorZapatos;
 
-    private Obtener_Zapatos_RangoPrecios(GestorZapatos gz){
+    private Obtener_Zapatos_hasta_talle(GestorZapatos gz){
         this.miGestorZapatos = gz;
     }
 

@@ -1,6 +1,6 @@
-package dominio.Core;
+package main.java.dominio.Core;
 
-import dominio.Enums.Pais;
+import main.java.dominio.Enums.*;
 
 public class Proveedor {
 	int codigoAsociado; 

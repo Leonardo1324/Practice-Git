@@ -1,4 +1,4 @@
-package dominio.Core;
+package main.java.dominio.Core;
 
 import java.util.ArrayList;
 

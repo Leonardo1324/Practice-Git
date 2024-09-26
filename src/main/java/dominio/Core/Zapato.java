@@ -1,4 +1,4 @@
-package dominio.Core;
+package main.java.dominio.Core;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 
-import dominio.Enums.Color;
+import main.java.dominio.Enums.*;
 
 @SuppressWarnings("unused")
 public class Zapato {
@@ -53,7 +53,7 @@ public class Zapato {
 		 * Agregar al codigo las dos primeras letras del modelo y el talle
 		 */
 	}
-	
+
 	private String generadorDeCodigo(Proveedor proveedor,String modelo,int talle) {
 		
 		String salida;

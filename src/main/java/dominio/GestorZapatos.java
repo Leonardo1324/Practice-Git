@@ -1,4 +1,4 @@
-package dominio;
+package main.java.dominio;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import org.junit.experimental.theories.FromDataPoints;
 
-import dominio.Core.Zapato;
+import main.java.dominio.Core.Zapato;
 
 @SuppressWarnings("unused")
 public class GestorZapatos {

@@ -1,23 +1,16 @@
-package dominio.test;
+package test.java.test;
 
-import dominio.*;
-import dominio.Core.*;
-import dominio.Enums.Color;
-import dominio.Enums.Pais;
-import dominio.Exceptions.*;
+import main.java.dominio.Core.*;
+import main.java.dominio.GestorZapatos;
+import main.java.dominio.Enums.*;
 
-import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
-import org.junit.jupiter.api.Test;
-
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-//import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
